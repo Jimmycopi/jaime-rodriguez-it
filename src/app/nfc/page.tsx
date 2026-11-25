@@ -12,7 +12,7 @@ export default function NfcCardPage() {
 
   const handleShare = async () => {
     if (navigator.share) {
-      await navigator.share({ title: `${OWNER_DATA.name} - ${OWNER_DATA.title}`, text: OWNER_DATA.role, url: window.location.href });
+      await navigator.share({ title: OWNER_DATA.name, text: OWNER_DATA.role, url: window.location.href });
     } else {
       await navigator.clipboard.writeText(window.location.href);
       alert("Enlace copiado.");
@@ -31,10 +31,9 @@ export default function NfcCardPage() {
         </div>
         <div className="px-6 pb-8 -mt-14 text-center">
           <div className="w-28 h-28 mx-auto rounded-full p-1 bg-gradient-to-tr from-sky-500 to-blue-600 shadow-xl">
-         <img src="/jimbo-avatar.png" alt={OWNER_DATA.name} className="w-full h-full object-cover rounded-full bg-slate-900" />
+            <img src="/jimbo-avatar.png" alt={OWNER_DATA.name} className="w-full h-full object-cover rounded-full bg-slate-900" />
           </div>
           <h1 className="text-2xl font-extrabold mt-4">{OWNER_DATA.name}</h1>
-          <p className="text-xs font-bold uppercase text-sky-500 mt-1">{OWNER_DATA.title}</p>
           <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">{OWNER_DATA.role}</p>
           <p className="text-xs text-slate-400 mt-2 flex items-center justify-center gap-1"><MapPin className="w-3.5 h-3.5 text-sky-500" /> {OWNER_DATA.location}</p>
 
