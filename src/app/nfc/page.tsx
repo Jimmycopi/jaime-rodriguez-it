@@ -31,7 +31,7 @@ export default function NfcCardPage() {
         </div>
         <div className="px-6 pb-8 -mt-14 text-center">
           <div className="w-28 h-28 mx-auto rounded-full p-1 bg-gradient-to-tr from-sky-500 to-blue-600 shadow-xl">
-         <img src="/Asistente tecnológico JIMBO.png" alt={OWNER_DATA.name} className="w-full h-full object-cover rounded-full bg-slate-900" />
+         <img src="/jimbo-avatar.png" alt={OWNER_DATA.name} className="w-full h-full object-cover rounded-full bg-slate-900" />
           </div>
           <h1 className="text-2xl font-extrabold mt-4">{OWNER_DATA.name}</h1>
           <p className="text-xs font-bold uppercase text-sky-500 mt-1">{OWNER_DATA.title}</p>
