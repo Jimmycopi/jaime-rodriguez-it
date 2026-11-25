@@ -1,6 +1,6 @@
 export const OWNER_DATA = {
   name: "Jaime Rodríguez V",
-  title: "Lic. en Informática",
+  title: "",
   role: "Especialista en Soporte Técnico, Redes y Soluciones Informáticas",
   tagline: "Soluciones tecnológicas profesionales para empresas y particulares.",
   location: "Ciudad de México, México",
